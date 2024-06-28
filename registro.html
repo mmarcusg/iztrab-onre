@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <header>
+        <h1>Registrar</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="registro.html">Registrar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="registrationForm">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <br>
+            <label for="phone">Número de Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="dob">Data de Nascimento:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="button" onclick="register()">Cadastrar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+        <div id="output"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
